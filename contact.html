@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact • MNS Code Craft</title>
+
+  <style>
+    :root{
+      --bg: #07070b;
+      --panel: rgba(255,255,255,0.07);
+      --panel2: rgba(255,255,255,0.04);
+      --stroke: rgba(255,255,255,0.12);
+      --stroke2: rgba(255,255,255,0.18);
+
+      --text: rgba(255,255,255,0.92);
+      --muted: rgba(255,255,255,0.70);
+
+      --gold: #d9b56c;
+      --cyan: #7de3ff;
+
+      --shadow: 0 26px 85px rgba(0,0,0,0.75);
+      --shadow2: 0 18px 60px rgba(0,0,0,0.65);
+      --radius: 18px;
+    }
+
+    *{ box-sizing: border-box; }
+    html, body{ height: 100%; }
+    body{
+      margin: 0;
+      color: var(--text);
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+      background:
+        radial-gradient(900px 500px at 10% 0%, rgba(125,227,255,0.14), rgba(0,0,0,0) 60%),
+        radial-gradient(900px 500px at 90% 10%, rgba(217,181,108,0.14), rgba(0,0,0,0) 60%),
+        linear-gradient(180deg, #050509, #090912 55%, #050509);
+    }
+
+    /* container */
+    .wrap{
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 26px 16px 44px;
+    }
+
+    /* top nav (اختياري) */
+    .topbar{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 18px;
+    }
+    .brand{
+      font-weight: 950;
+      letter-spacing: 0.02em;
+      font-size: 16px;
+      opacity: .92;
+    }
+    .back{
+      text-decoration: none;
+      font-weight: 850;
+      font-size: 13px;
+      color: rgba(255,255,255,0.85);
+      padding: 10px 12px;
+      border-radius: 12px;
+      border: 1px solid var(--stroke);
+      background: rgba(0,0,0,0.22);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.10);
+      transition: transform .14s ease, border-color .14s ease, box-shadow .14s ease;
+    }
+    .back:hover{
+      transform: translateY(-1px);
+      border-color: var(--stroke2);
+      box-shadow: var(--shadow2), inset 0 1px 0 rgba(255,255,255,0.12);
+    }
+
+    /* hero */
+    .hero{
+      padding: 18px 18px 16px;
+      border-radius: var(--radius);
+      border: 1px solid var(--stroke);
+      background: linear-gradient(180deg, var(--panel), var(--panel2));
+      box-shadow: var(--shadow2), inset 0 1px 0 rgba(255,255,255,0.10);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      text-align: center;
+    }
+    .kicker{
+      margin: 0 auto 10px;
+      display: inline-block;
+      padding: 6px 12px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,0.14);
+      background: rgba(0,0,0,0.22);
+      font-size: 12px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.86);
+    }
+    .hero h1{
+      margin: 0;
+      font-size: clamp(26px, 3.4vw, 40px);
+      font-weight: 950;
+      letter-spacing: -0.02em;
+      line-height: 1.1;
+    }
+    .hero h1 span{
+      background: linear-gradient(90deg, var(--gold), var(--cyan), var(--gold));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+    .hero p{
+      margin: 10px auto 0;
+      max-width: 70ch;
+      color: var(--muted);
+      line-height: 1.7;
+      font-size: 15px;
+    }
+
+    /* layout */
+    .grid{
+      display: grid;
+      grid-template-columns: 1fr 1.2fr;
+      gap: 16px;
+      margin-top: 16px;
+    }
+    @media (max-width: 900px){
+      .grid{ grid-template-columns: 1fr; }
+    }
+
+    /* cards */
+    .card{
+      border-radius: var(--radius);
+      border: 1px solid var(--stroke);
+      background: linear-gradient(180deg, var(--panel), var(--panel2));
+      box-shadow: var(--shadow2), inset 0 1px 0 rgba(255,255,255,0.10);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      overflow: hidden;
+    }
+    .card-head{
+      padding: 14px 16px 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+    .card-title{
+      margin: 0;
+      font-size: 14px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      opacity: .9;
+      font-weight: 900;
+    }
+    .badge{
+      font-size: 12px;
+      font-weight: 900;
+      letter-spacing: 0.08em;
+      padding: 6px 10px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,0.14);
+      background: rgba(0,0,0,0.18);
+      color: rgba(255,255,255,0.84);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.10);
+    }
+
+    /* info list */
+    .info{
+      padding: 14px 16px 16px;
+      display: grid;
+      gap: 12px;
+    }
+    .info-item{
+      display: grid;
+      grid-template-columns: 44px 1fr;
+      gap: 12px;
+      align-items: center;
+
+      padding: 12px 12px;
+      border-radius: 16px;
+      border: 1px solid rgba(255,255,255,0.10);
+      background: rgba(0,0,0,0.18);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.08);
+    }
+    .icon{
+      width: 44px;
+      height: 44px;
+      border-radius: 14px;
+      display: grid;
+      place-items: center;
+
+      background: linear-gradient(90deg, rgba(217,181,108,0.95), rgba(125,227,255,0.75));
+      color: #0b0b0f;
+      font-weight: 950;
+      box-shadow: 0 18px 35px rgba(0,0,0,0.35), inset 0 1px 0 rgba(255,255,255,0.25);
+      user-select: none;
+    }
+    .info-item .label{
+      font-size: 12px;
+      opacity: .70;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin: 0;
+    }
+    .info-item .value{
+      margin: 4px 0 0;
+      font-weight: 900;
+      letter-spacing: 0.02em;
+    }
+    .info-item a{
+      color: rgba(255,255,255,0.92);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(125,227,255,0.35);
+    }
+    .info-item a:hover{
+      border-bottom-color: rgba(217,181,108,0.55);
+    }
+
+    /* form */
+    form{
+      padding: 14px 16px 16px;
+      display: grid;
+      gap: 12px;
+    }
+    .row{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+    @media (max-width: 650px){
+      .row{ grid-template-columns: 1fr; }
+    }
+
+    label{
+      display: block;
+      font-size: 12px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      opacity: .78;
+      margin: 0 0 8px;
+      font-weight: 900;
+    }
+
+    input, textarea{
+      width: 100%;
+      border-radius: 16px;
+      border: 1px solid rgba(255,255,255,0.12);
+      background: rgba(0,0,0,0.20);
+      color: var(--text);
+
+      padding: 12px 12px;
+      font-size: 14px;
+      outline: none;
+
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.08);
+      transition: border-color .14s ease, box-shadow .14s ease, transform .14s ease;
+    }
+    textarea{ min-height: 140px; resize: vertical; }
+
+    input:focus, textarea:focus{
+      border-color: rgba(125,227,255,0.45);
+      box-shadow:
+        0 0 0 4px rgba(125,227,255,0.12),
+        inset 0 1px 0 rgba(255,255,255,0.10);
+    }
+
+    .submit{
+      margin-top: 4px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+
+      height: 54px;
+      border-radius: 16px;
+      border: none;
+      cursor: pointer;
+
+      font-weight: 950;
+      letter-spacing: 0.10em;
+      text-transform: uppercase;
+
+      color: #0b0b0f;
+      background: linear-gradient(90deg, var(--gold), var(--cyan));
+      box-shadow:
+        0 20px 55px rgba(0,0,0,0.60),
+        inset 0 1px 0 rgba(255,255,255,0.25);
+
+      transition: transform .14s ease, box-shadow .14s ease, filter .14s ease;
+    }
+    .submit:hover{
+      transform: translateY(-1px);
+      box-shadow:
+        0 26px 75px rgba(0,0,0,0.75),
+        inset 0 1px 0 rgba(255,255,255,0.28);
+      filter: saturate(1.05);
+    }
+    .hint{
+      margin: 0;
+      font-size: 12px;
+      color: rgba(255,255,255,0.62);
+      line-height: 1.6;
+    }
+
+    /* footer */
+    .foot{
+      margin-top: 14px;
+      text-align: center;
+      color: rgba(255,255,255,0.55);
+      font-size: 12px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <div class="topbar">
+      <div class="brand">MNS Code Craft</div>
+      <a class="back" href="index.html">← Back to Home</a>
+    </div>
+
+    <section class="hero">
+      <div class="kicker">Contact</div>
+      <h1>Let’s <span>build</span> something great.</h1>
+      <p>
+        Send a message and I’ll get back to you as soon as possible.
+      </p>
+    </section>
+
+    
+
+    <div class="grid">
+      <!-- INFO CARD -->
+      <section class="card">
+        <div class="card-head">
+          <h2 class="card-title">Direct Info</h2>
+          <span class="badge">Fast Reply</span>
+        </div>
+
+        <div class="info">
+          <div class="info-item">
+            <div class="icon">@</div>
+            <div>
+              <p class="label">Email</p>
+              <p class="value"><a href="mailto:your@email.com">fazemns123@gmail.com</a></p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="icon">☎</div>
+            <div>
+              <p class="label">Whatsapp</p>
+              <p class="value"><a href="https://Wa.me/972508841448" target="_blank" rel="noopener">+972 50 884 1448 </a></p>
+              <p class="value"><a href="https://Wa.me/962790971353" target="_blank" rel="noopener">+962 7 9097 1353</a></p>
+            </div>
+          </div>
+
+          
+
+          <p class="hint">
+             Write your message clearly (what you need + your goal), and I’ll help you faster.
+          </p>
+        </div>
+      </section>
+
+      <!-- FORM CARD -->
+      <section class="card">
+        <div class="card-head">
+          <h2 class="card-title">Send a Message</h2>
+          <span class="badge">Form</span>
+        </div>
+
+        <form action="https://formspree.io/f/xdadyqvn" method="POST" id="form22">
+          <input type="hidden" name="_redirect" value="thanks.html">
+          <div class="row">
+            <div>
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" placeholder="Your name" required>
+            </div>
+
+            <div>
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" placeholder="you@example.com" required>
+            </div>
+          </div>
+
+          <div>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Write your message..." required></textarea>
+          </div>
+
+          <!-- Optional: subject -->
+          <input type="hidden" name="_subject" value="New message from MNS Code Craft">
+
+          <button class="submit" type="submit">Send Message</button>
+        </form>
+      </section>
+    </div>
+
+    <div class="foot">© <span id="y"></span> MNS CodeCraft • All rights reserved</div>
+  </div>
+
+  <script>
+    document.getElementById('form22').onsubmit = function(event) {
+
+      window.location.href = 'thanks.html';
+    }
+  </script>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

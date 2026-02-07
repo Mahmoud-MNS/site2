@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Types Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="datatypequizpage">
+    <h2 class="quizquestion">What data type is the number 23 ?</h2>
+   
+
+    <div class="datatypequizcontainer">
+    <form>
+    <p>
+        <label class="quizoption">
+            <input type="radio" name="datatype" value="float">
+            float
+        </label>
+
+        <label class="quizoption">
+            <input type="radio" name="datatype" value="int">
+            int
+        </label>
+
+        <label class="quizoption">
+            <input type="radio" name="datatype" value="bool">
+            bool
+        </label>
+
+        <label class="quizoption">
+            <input type="radio" name="datatype" value="double">
+            double
+        </label>
+
+        
+    </p>
+
+   
+    
+
+    <button class="quizsubmitbutton" type="button" onclick="checkAnswer()">Submit</button>
+    </div>
+    </form>
+    
+    <p class="quizresult" id="result"></p>
+
+    <script>
+        function checkAnswer() {
+            const resultEl = document.getElementById("result");
+            const selected = document.querySelector('input[name="datatype"]:checked');
+
+            resultEl.classList.remove("correct", "wrong", "info");
+
+            if(!selected) {
+                resultEl.textContent = "Please select an option.";
+                resultEl.classList.add("info");
+                return;
+            }
+
+            if (selected.value === "int") {
+                resultEl.textContent = "Correct✅";
+                resultEl.classList.add("correct");
+            } else {
+                resultEl.textContent="Try again❌ Hint: 23 is a whole number.";
+                resultEl.classList.add("wrong");
+            }
+        }
+    </script>
+
+
+    <h2 class="quizquestion">What data type is the number 2.0 ?</h2>
+
+
+    <div class="datatypequizcontainer">
+    <form>
+    <p>
+        <label class="quizoption">
+            <input type="radio" name="datatype2" value="int">
+            int
+        </label>
+
+        <label class="quizoption">
+            <input type="radio" name="datatype2" value="string">
+            string
+        </label>
+
+        <label class="quizoption">
+            <input type="radio" name="datatype2" value="float only">
+            float only
+        </label>
+
+        <label class="quizoption">
+            <input type="radio" name="datatype2" value="float / double">
+            float / double
+        </label>
+
+        
+    </p>
+
+   
+    
+
+    <button class="quizsubmitbutton" type="button" onclick="checkAnswer1()">Submit</button>
+    </div>
+    </form>
+    
+    <p class="quizresult" id="result2"></p>
+
+    <script>
+        function checkAnswer1() {
+            const resultEl = document.getElementById("result2");
+            const selected = document.querySelector('input[name="datatype2"]:checked');
+
+            resultEl.classList.remove("correct", "wrong", "info");
+
+            if(!selected) {
+                resultEl.textContent = "Please select an option.";
+                resultEl.classList.add("info");
+                return;
+            }
+
+            if (selected.value === "float / double") {
+                resultEl.textContent = "Correct✅";
+                resultEl.classList.add("correct");
+            } else {
+                resultEl.textContent="Try again❌";
+                resultEl.classList.add("wrong");
+            }
+        }
+    </script>
+
+
+
+
+
+
+        <h2 class="quizquestion">bool x = 5;  what is the result when we print x ?</h2>
+
+
+    <div class="datatypequizcontainer">
+    <form>
+    <p>
+        <label class="quizoption">
+            <input type="radio" name="datatype3" value="5">
+            5
+        </label>
+
+        <label class="quizoption">
+            <input type="radio" name="datatype3" value="x">
+            x
+        </label>
+
+        <label class="quizoption">
+            <input type="radio" name="datatype3" value="x = 5">
+            x = 5
+        </label>
+
+        <label class="quizoption">
+            <input type="radio" name="datatype3" value="1">
+            1 
+        </label>
+
+        
+    </p>
+
+   
+    
+
+    <button class="quizsubmitbutton" type="button" onclick="checkAnswer2()">Submit</button>
+    </div>
+    </form>
+    
+    <p class="quizresult" id="result3"></p>
+
+    <script>
+        function checkAnswer2() {
+            const resultEl = document.getElementById("result3");
+            const selected = document.querySelector('input[name="datatype3"]:checked');
+
+            resultEl.classList.remove("correct", "wrong", "info");
+
+            if(!selected) {
+                resultEl.textContent = "Please select an option.";
+                resultEl.classList.add("info");
+                return;
+            }
+
+            if (selected.value === "1") {
+                resultEl.textContent = "Correct✅ because 1 equals true";
+                resultEl.classList.add("correct");
+            } else {
+                resultEl.textContent="Try again❌";
+                resultEl.classList.add("wrong");
+            }
+        }
+    </script>
+
+
+    <h2 class="quizquestion">What data type is 'A' ?</h2>
+
+
+    <div class="datatypequizcontainer">
+    <form>
+    <p>
+        <label class="quizoption">
+            <input type="radio" name="datatype4" value="string">
+            string
+        </label>
+
+        <label class="quizoption">
+            <input type="radio" name="datatype4" value="double">
+            double
+        </label>
+
+        <label class="quizoption">
+            <input type="radio" name="datatype4" value="bool">
+            bool
+        </label>
+
+        <label class="quizoption">
+            <input type="radio" name="datatype4" value="char">
+            char
+        </label>
+
+        
+    </p>
+
+   
+    
+
+    <button class="quizsubmitbutton" type="button" onclick="checkAnswer3()">Submit</button>
+    </div>
+    </form>
+    
+    <p class="quizresult" id="result4"></p>
+
+    <script>
+        function checkAnswer3() {
+            const resultEl = document.getElementById("result4");
+            const selected = document.querySelector('input[name="datatype4"]:checked');
+
+            resultEl.classList.remove("correct", "wrong", "info");
+
+            if(!selected) {
+                resultEl.textContent = "Please select an option.";
+                resultEl.classList.add("info");
+                return;
+            }
+
+            if (selected.value === "char") {
+                resultEl.textContent = "Correct✅";
+                resultEl.classList.add("correct");
+            } else {
+                resultEl.textContent="Try again❌";
+                resultEl.classList.add("wrong");
+            }
+        }
+    </script>
+
+
+
+        <h2 class="quizquestion">What data type is "123" ?</h2>
+
+
+    <div class="datatypequizcontainer">
+    <form>
+    <p>
+        <label class="quizoption">
+            <input type="radio" name="datatype11" value="bool">
+            bool
+        </label>
+
+        <label class="quizoption">
+            <input type="radio" name="datatype11" value="int">
+            int
+        </label>
+
+        <label class="quizoption">
+            <input type="radio" name="datatype11" value="string">
+            string
+        </label>
+
+        <label class="quizoption">
+            <input type="radio" name="datatype11" value="double">
+            double
+        </label>
+
+        
+    </p>
+
+   
+    
+
+    <button class="quizsubmitbutton" type="button" onclick="checkAnswer11()">Submit</button>
+    </div>
+    </form>
+    
+    <p class="quizresult" id="result11"></p>
+
+    <script>
+        function checkAnswer11() {
+            const resultEl = document.getElementById("result11");
+            const selected = document.querySelector('input[name="datatype11"]:checked');
+
+            resultEl.classList.remove("correct", "wrong", "info");
+
+            if(!selected) {
+                resultEl.textContent = "Please select an option.";
+                resultEl.classList.add("info");
+                return;
+            }
+
+            if (selected.value === "string") {
+                resultEl.textContent = "Correct✅ becauese the number is in quotes";
+                resultEl.classList.add("correct");
+            } else {
+                resultEl.textContent="Try again❌";
+                resultEl.classList.add("wrong");
+            }
+        }
+    </script>
+
+
+            <h2 class="quizquestion">Which of the following is valid in C++ ?</h2>
+
+
+    <div class="datatypequizcontainer">
+    <form>
+    <p>
+        <label class="quizoption">
+            <input type="radio" name="datatype6" value="int x = 5;">
+            int x = "5";
+        </label>
+
+        <label class="quizoption">
+            <input type="radio" name="datatype6" value="float y = 3.7;">
+            float y = 3.7;
+        </label>
+
+        <label class="quizoption">
+            <input type="radio" name="datatype6" value="char z = "A;">
+            char z = "A";
+        </label>
+
+        <label class="quizoption">
+            <input type="radio" name="datatype6" value="bool b = 10;">
+            bool b = 10;
+        </label>
+
+        
+    </p>
+
+   
+    
+
+    <button class="quizsubmitbutton" type="button" onclick="checkAnswer4()">Submit</button>
+    </div>
+    </form>
+    
+    <p class="quizresult" id="result6"></p>
+
+    <script>
+        function checkAnswer4() {
+            const resultEl = document.getElementById("result6");
+            const selected = document.querySelector('input[name="datatype6"]:checked');
+
+            resultEl.classList.remove("correct", "wrong", "info");
+
+            if(!selected) {
+                resultEl.textContent = "Please select an option.";
+                resultEl.classList.add("info");
+                return;
+            }
+
+            if (selected.value === "float y = 3.7;") {
+                resultEl.textContent = "Correct✅";
+                resultEl.classList.add("correct");
+            } else {
+                resultEl.textContent="Try again❌";
+                resultEl.classList.add("wrong");
+            }
+        }
+    </script>
+
+
+
+                <h2 class="quizquestion">Best data type for storing age ?</h2>
+
+
+    <div class="datatypequizcontainer">
+    <form>
+    <p>
+        <label class="quizoption">
+            <input type="radio" name="datatype7" value="float">
+            float
+        </label>
+
+        <label class="quizoption">
+            <input type="radio" name="datatype7" value="string">
+            string
+        </label>
+
+        <label class="quizoption">
+            <input type="radio" name="datatype7" value="int">
+            int
+        </label>
+
+        <label class="quizoption">
+            <input type="radio" name="datatype7" value="bool">
+            bool
+        </label>
+
+        
+    </p>
+
+   
+    
+
+    <button class="quizsubmitbutton" type="button" onclick="checkAnswer5()">Submit</button>
+    </div>
+    </form>
+    
+    <p class="quizresult" id="result7"></p>
+
+    <script>
+        function checkAnswer5() {
+            const resultEl = document.getElementById("result7");
+            const selected = document.querySelector('input[name="datatype7"]:checked');
+
+            resultEl.classList.remove("correct", "wrong", "info");
+
+            if(!selected) {
+                resultEl.textContent = "Please select an option.";
+                resultEl.classList.add("info");
+                return;
+            }
+
+            if (selected.value === "int") {
+                resultEl.textContent = "Correct✅";
+                resultEl.classList.add("correct");
+            } else {
+                resultEl.textContent="Try again❌";
+                resultEl.classList.add("wrong");
+            }
+        }
+    </script>
+
+
+
+
+       <h2 class="quizquestion">Best data type for counting students ?</h2>
+
+
+    <div class="datatypequizcontainer">
+    <form>
+    <p>
+        <label class="quizoption">
+            <input type="radio" name="datatype8" value="string">
+            string
+        </label>
+
+        <label class="quizoption">
+            <input type="radio" name="datatype8" value="float">
+            float
+        </label>
+
+        <label class="quizoption">
+            <input type="radio" name="datatype8" value="char">
+            char
+        </label>
+
+        <label class="quizoption">
+            <input type="radio" name="datatype8" value="int">
+            int
+        </label>
+
+        
+    </p>
+
+   
+    
+
+    <button class="quizsubmitbutton" type="button" onclick="checkAnswer6()">Submit</button>
+    </div>
+    </form>
+    
+    <p class="quizresult" id="result8"></p>
+
+    <script>
+        function checkAnswer6() {
+            const resultEl = document.getElementById("result8");
+            const selected = document.querySelector('input[name="datatype8"]:checked');
+
+            resultEl.classList.remove("correct", "wrong", "info");
+
+            if(!selected) {
+                resultEl.textContent = "Please select an option.";
+                resultEl.classList.add("info");
+                return;
+            }
+
+            if (selected.value === "int") {
+                resultEl.textContent = "Correct✅";
+                resultEl.classList.add("correct");
+            } else {
+                resultEl.textContent="Try again❌";
+                resultEl.classList.add("wrong");
+            }
+        }
+    </script>
+
+
+
+
+       <h2 class="quizquestion">Which of the following is <span id="notword">not</span> a valid C++ data type ?</h2>
+
+
+    <div class="datatypequizcontainer">
+    <form>
+    <p>
+        <label class="quizoption">
+            <input type="radio" name="datatype9" value="int">
+            int
+        </label>
+
+        <label class="quizoption">
+            <input type="radio" name="datatype9" value="bool">
+            bool
+        </label>
+
+        <label class="quizoption">
+            <input type="radio" name="datatype9" value="number">
+            number
+        </label>
+
+        <label class="quizoption">
+            <input type="radio" name="datatype9" value="float">
+            float
+        </label>
+
+        
+    </p>
+
+   
+    
+
+    <button class="quizsubmitbutton" type="button" onclick="checkAnswer7()">Submit</button>
+    </div>
+    </form>
+    
+    <p class="quizresult" id="result9"></p>
+
+    <script>
+        function checkAnswer7() {
+            const resultEl = document.getElementById("result9");
+            const selected = document.querySelector('input[name="datatype9"]:checked');
+
+            resultEl.classList.remove("correct", "wrong", "info");
+
+            if(!selected) {
+                resultEl.textContent = "Please select an option.";
+                resultEl.classList.add("info");
+                return;
+            }
+
+            if (selected.value === "number") {
+                resultEl.textContent = "Correct✅";
+                resultEl.classList.add("correct");
+            } else {
+                resultEl.textContent="Try again❌";
+                resultEl.classList.add("wrong");
+            }
+        }
+    </script>
+
+
+
+
+
+
+                <h2 class="quizquestion">Which variable declaration is correct in C++ ?</h2>
+
+
+    <div class="datatypequizcontainer">
+    <form>
+    <p>
+        <label class="quizoption">
+            <input type="radio" name="datatype10" value="int x = "10";">
+            int x = "10";
+        </label>
+
+        <label class="quizoption">
+            <input type="radio" name="datatype10" value="double x = 5.5;">
+            double x = 5.5;
+        </label>
+
+        <label class="quizoption">
+            <input type="radio" name="datatype10" value="char x = "B";">
+            char x = "B";
+        </label>
+
+        <label class="quizoption">
+            <input type="radio" name="datatype10" value="bool x = "true";">
+            bool x = "true";
+        </label>
+
+        
+    </p>
+
+   
+    
+
+    <button class="quizsubmitbutton" type="button" onclick="checkAnswer8()">Submit</button>
+    </div>
+    </form>
+    
+    <p class="quizresult" id="result10"></p>
+
+    <script>
+        function checkAnswer8() {
+            const resultEl = document.getElementById("result10");
+            const selected = document.querySelector('input[name="datatype10"]:checked');
+
+            resultEl.classList.remove("correct", "wrong", "info");
+
+            if(!selected) {
+                resultEl.textContent = "Please select an option.";
+                resultEl.classList.add("info");
+                return;
+            }
+
+            if (selected.value === "double x = 5.5;") {
+                resultEl.textContent = "Correct✅";
+                resultEl.classList.add("correct");
+            } else {
+                resultEl.textContent="Try again❌";
+                resultEl.classList.add("wrong");
+            }
+        }
+    </script>
+
+
+<p>Well done! you completed the quiz!</p>
+
+<button class="homepagebutton" onclick="goHome()">
+    <i class="crown"></i>
+    <span>HOME PAGE</span>
+</button>
+<script>
+    function goHome() {
+        window.location.href = "index.html";
+    }
+</script>
+
+<br>
+
+
+</body>
+</html>

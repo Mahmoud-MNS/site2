@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Thank You • MNS Code Craft</title>
+
+<style>
+:root{
+  --bg: #07070b;
+  --panel: rgba(255,255,255,0.07);
+  --panel2: rgba(255,255,255,0.04);
+  --stroke: rgba(255,255,255,0.12);
+  --stroke2: rgba(255,255,255,0.18);
+  --gold: #d9b56c;
+  --cyan: #7de3ff;
+}
+
+body{
+  margin: 0;
+  min-height: 100vh;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  background:
+    radial-gradient(900px 500px at 10% 0%, rgba(125,227,255,0.14), rgba(0,0,0,0) 60%),
+    radial-gradient(900px 500px at 90% 10%, rgba(217,181,108,0.14), rgba(0,0,0,0) 60%),
+    linear-gradient(180deg, #050509, #090912 55%, #050509);
+  color: white;
+
+  display: grid;
+  place-items: center;
+}
+
+.thanks-wrap{
+  max-width: 720px;
+  width: 92%;
+  text-align: center;
+
+  padding: 28px 22px 22px;
+  border-radius: 20px;
+  border: 1px solid rgba(255,255,255,0.12);
+
+  background: linear-gradient(180deg, var(--panel), var(--panel2));
+  box-shadow:
+    0 22px 70px rgba(0,0,0,0.65),
+    inset 0 1px 0 rgba(255,255,255,0.10);
+
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.check{
+  font-size: 64px;
+  margin-bottom: 8px;
+  background: linear-gradient(90deg, var(--gold), var(--cyan));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+h1{
+  margin: 0;
+  font-size: clamp(24px, 3.2vw, 38px);
+  font-weight: 900;
+  letter-spacing: -0.02em;
+}
+
+h1 span{
+  background: linear-gradient(90deg, var(--gold), var(--cyan), var(--gold));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+p{
+  margin: 12px auto 0;
+  max-width: 64ch;
+  line-height: 1.7;
+  opacity: .85;
+}
+
+.actions{
+  margin-top: 16px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn{
+  text-decoration: none;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+
+  padding: 10px 16px;
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,0.14);
+
+  background: linear-gradient(90deg, var(--gold), var(--cyan));
+  color: #0b0b0f;
+
+  box-shadow:
+    0 18px 55px rgba(0,0,0,0.55),
+    inset 0 1px 0 rgba(255,255,255,0.22);
+
+  transition: transform .14s ease, box-shadow .14s ease;
+}
+
+.btn:hover{
+  transform: translateY(-1px);
+  box-shadow:
+    0 26px 75px rgba(0,0,0,0.75),
+    inset 0 1px 0 rgba(255,255,255,0.26);
+}
+
+.note{
+  margin-top: 14px;
+  font-size: 12px;
+  opacity: .65;
+}
+</style>
+</head>
+
+<body>
+
+<div class="thanks-wrap">
+  <div class="check">✓</div>
+
+  <h1>Message <span>Sent Successfully</span></h1>
+
+  <p>
+    Thanks for reaching out!  
+    I’ll review your message and get back to you as soon as possible.
+  </p>
+
+  <div class="actions">
+    <a class="btn" href="index.html">Back to Home</a>
+    <a class="btn" href="contact.html">Send Another Message</a>
+  </div>
+
+  <p class="note">
+    You will receive a reply at the email you provided.
+  </p>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Priorities & Calculations</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="introductionword">Priorities & Calculations</h1>
+    <p class="explain">If we define a variable called <span id="variable">x</span> without giving it a value , then we tried to print its value .. like this :</p>
+    <img src="./images/prior1.png" alt="picture for printing x without to initialize it"> 
+    <br><br>
+    <p class="explain">We will get an error like this :</p>
+    <img src="./images/error1.png" alt="picture for an error">
+    <p class="explain">Here , the compiler tells us that we are trying to print a variable that has no value. <br>So we must give the variable a value when we define it at the beginning.</p>
+    <br><br><hr> 
+    <p class="explain">It is important to know that when we define a variable and give it a value , we start from right to left.</p>
+    <p class="example">Example : </p>
+    <p class="explain">If we define a variable named <span id="variable">h</span> in this way :</p>
+    <img src="./images/prior2.png" alt="picture for a declaration">
+    <p class="explain">The program first calculates <span class="calculation">3</span> + <span class="calculation">4</span> , then stores the result in <span id="variable">h</span> , so <span id="variable">h</span> becomes <span class="calculation">7</span>.</p>
+    <br><br><hr>
+    <p class="explain">These are the math operations listed from highest priority to lowest priority : <br>First <span class="operations">( )</span> then <span class="operations">*</span> , <span class="operations">/</span> , <span class="operations">%</span> then <span class="operations">+</span> , <span class="operations">-</span> , and finally <span class="operations">=</span> .</p>
+    <br><br><hr>
+    <p class="explain">If we define a variable named <span id="variable">b</span> in this way :</p>
+    <img src="./images/prior3.png" alt="picture for a declaration">
+    <p class="explain">The value of <span id="variable">b</span> will be <span class="calculation">12</span> , because multiplication is done before addition. <br>The program first did <span class="calculation">5</span> * <span class="calculation">2</span> , then added <span class="calculation">2</span>.</p>
+    <br>
+    <p class="explain">Now , what about this ?</p>
+    <img src="./images/prior4.png" alt="picture for a declaration">
+    <p class="explain">The value of <span id="variable">b</span> will be <span class="calculation">20</span> , why ? <br>Because the program first solved the parentheses ( <span class="calculation">2</span> + <span class="calculation">2</span> ) , then multiplied the result by <span class="calculation">5</span>.</p>
+    <br><br><hr>
+    <p class="explain">Let's explain the modulus ( <span class="operations">%</span> ) operation.</p>
+    <p class="explain">What is modulus ( <span class="operations">%</span> ) ? <br>Modulus means the reminder after division.</p>
+    <p class="explain">We must know that the modulus operator ( <span class="operations">%</span> ) works only with integer numbers <span id="mainfunction">int</span>.</p>
+    <br>
+
+    <p class="explain">I will give you four rules that summarize modulus ( <span class="operations">%</span> ) : </p>
+    <p class="explain">1. If a number is modulus a smaller number , the result is the reminder after division.</p>
+    <p class="example">Example : </p>
+    <p class="explain"><span class="calculation">9</span><span class="operations"> % </span><span class="calculation">7</span><span class="operations"> =</span><span class="calculation"> 2</span> , because <span class="calculation">9</span><span class="operations"> /</span><span class="calculation"> 7</span> ( integer division ) <span class="operations">= </span><span class="calculation">1</span> , and the reminder is <span class="calcultion">2</span>.</p>
+    <br>
+    <p class="explain">2. If a number is modulus a bigger number , the result is the smaller number itself.</p>
+    <p class="example">Example : </p>
+    <p class="explain"><span class="calculation">3</span><span class="operations"> % </span><span class="calculation">5</span><span class="operations"> =</span><span class="calculation"> 3</span>.</p>
+    <br>
+    <p class="explain">3. Any number modulus itself , the result is <span class="calculation">0</span>.</p>
+    <p class="example">Example : </p>
+    <p class="explain"><span class="calculation">6</span><span class="operations"> % </span><span class="calculation">6</span><span class="operations"> =</span><span class="calculation"> 0</span>.</p>
+    <br>
+    <p class="explain">4. This case , <span class="calculation">0</span><span class="operations"> % </span><span class="calculation">0</span> is not valid , so it gives an error.</p>
+    <br><br><hr>
+    <p class="explain">Now we will learn how to ask the user to enter a value for a variable.</p>
+    <br>
+    <p class="explain">If we want to ask the user to give a value to a variable named <span id="variable">x</span> , we can define <span id="variable">x</span> without giving it an initial value.</p>
+    <p class="explain">To receive a value from the user , we use <span id="mainfunction">cin</span> command , then write ( <span id="mainfunction">>></span> ) , followed by the variable name , then a semicolon.</p>
+    <p class="example">Example : </p>
+    <img src="./images/prior5.png" alt="picture how to get a value from the user">
+    <p class="explain">When the program runs this line , it pauses and waits for the user to enter a value for <span id="variable">x</span>.</p>
+    <p class="explain"><span id="alert">Remember </span> : <span id="mainfunction">cout</span> uses <span id="mainfunction"><<</span> , but <span id="mainfunction">cin </span> uses <span id="mainfunction">>></span>.</p>
+    <br>
+    <p class="explain">What if we want the user to enter values for two variables at the same line ? <br> We can do it like this :</p>
+    <img src="./images/prior6.png" alt="picture how to get a two values from the user in the same line">
+    <p class="explain">First , we defined two variables , then in the next line we received a value for each of them. <br> So when the program reaches this line , it waits for the user to enter a value for <span id="variable">x</span> , and after that it waits for the user to enter a value for <span id="variable">y</span>.</p>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <p class="datatypequizexplain"><a class="datatypequizbutton" href="prioritiesquiz.html">click here for a quick quiz!</a></p>
+    
+    
+
+      <div class="center-container">
+        <button class="homepagebutton" onclick="goHome()">
+        <i class="crown"></i>
+        <span>HOME PAGE</span>
+    </button>
+        </div>
+    <script>
+        function goHome() {
+            window.location.href = "index.html";
+      }
+    </script>
+
+    <br>
+
+
+
+
+
+
+
+
+
+
+    
+</body>
+</html>

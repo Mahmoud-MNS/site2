@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Types</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="introductionword">Data Types</h1>
+    <p class="explain">There are different types of variables , each type stores a value like numbers, decimals, text and others.</p>
+    <p class="explain">First, we start with <span id="mainfunction">int</span> data type. <br> <span id="mainfunction">int</span> means <span id="iletter">integer</span> , it stores only whole numbers (integers) , like 7 , but we cannot store 7.5 or 7.3 , this is an error. we cannot put decimal numbers in it.</p>
+    <p class="example">Example : </p>
+    <p class="explain">If we want to declare a varibale called <span id="variable">x</span> that stores the value 5 , we do it like this :</p>
+    <img src="./images/int1.png" alt="picture how to declare int variable in VScode">
+    <p class="explain">Now we defined the variable <span id="variable">x</span> , and its value is 5.</p>
+    <p class="explain">How can we print the value of <span id="variable">x</span> ?</p>
+    <img src="./images/int2.png" alt="picturehow to print value of variable in VScode">
+    <p class="explain">This statement prints <span class="variableresult">5</span> , the value of <span id="variable">x</span>. <br> We write the variable name without double quotes , because anything inside double quotes is printed as text.</p>
+    <br><br><hr>
+    <p class="explain">Next , we start with  <span id="mainfunction">float</span> data type. <br><span id="mainfunction">float</span> means <span id="iletter">floating point</span> , it stores decimal numbers like 7.5 , 6.3 ... It can also store whole numbers (integers) like 7.</p>
+    <p class="example">Example : </p>
+    <p class="explain">If we want to declare a variable called <span>y</span> that stores the value 3.4 , we do it like this :</p>
+    <img src="./images/float1.png" alt="picture how to declare float variable in VScode">
+    <p class="explain">Now we have a variable called <span id="variable">y</span> , to print the value of <span id="variable">y</span> , we write it like this : </p>
+    <img src="./images/float2.png" alt="picture how to print the value of variable y"> 
+    <p class="explain">This statement prints <span class="variableresult">3.4</span> , the value of <span id="variable">y</span>. </p>
+    <br><br><hr>
+    <p class="explain">Next , we start with <span id="mainfunction">double</span> data type. <br> <span id="mainfunction">double</span> means <span id="iletter">double precision floating point</span> , <span id="mainfunction">double</span> is similar to <span id="mainfunction">float</span> , but it can store larger numbers and is more accurate.</p>
+    <p class="example">Example : </p>
+    <p class="explain">If we want to declare a variable called <span id="variable">z</span> that stores the value 23.8 , to print the value of <span id="variable">z</span> , we write it like this :</p>
+    <img src="./images/double1.png" alt="picture how to declare double variable in VScode">
+    <p class="explain">Now we have a variable called <span id="variable">z</span> , to print the value of <span id="variable">z</span> , we write it like this : </p>
+    <img src="./images/double2.png" alt="picture how to print the value of double in VScode">
+    <p class="explain">This statement prints <span class="variableresult">23.8</span> , the value of <span id="variable">z</span>. </p>
+    <br><br><hr>
+    <p class="explain">Next , we start with <span id="mainfunction">string</span> data type. <br> <span id="mainfunction">string</span> means <span id="iletter">sequence of characters <span class="explain">(</span> text</span> <span class="explain">)</span> , <span id="mainfunction">string</span> is used to store text , such as names , words or sentences , like "Hello" , "C++" , "My name is Mahmoud"...</p>
+    <p class="explain">We should always put the <span id="mainfunction">string</span> text inside double quotes. </p>
+    <p class="example">Example : </p>
+    <p class="explain">If we want to declare a variable called <span id="variable">str</span> that stores the text "Hello , how are you?" , we write it like this :</p>
+    <img src="./images/string1.png" alt="picture how to declare string variable in VScode">
+    <p class="explain">Now we have a variable called <span id="variable">str</span> , to print what is inside the <span id="variable">str</span> variable , we write it like this :</p>
+    <img src="./images/string2.png" alt="picture how to pring what is inside string variable in VScode">
+    <p class="explain">This statement prints <span class="variableresult">Hello , how are you?</span> , which is the value stored inside <span id="variable">str</span>. </p>
+    <br><br><hr>
+    <p class="explain">Next , we start with <span id="mainfunction">char</span> data type. <br> <span id="mainfunction">char</span> means <span id="iletter">character</span> , <span id="mainfunction">char</span> is used to store a single character , such as a letter or symbol , like 'A' , 'e' , '@' , '#'... <br>A <span id="mainfunction">char</span> must always be written between single quotes.</p>
+    <p class="example">Example : </p>
+    <p class="explain">If we want to declare a variable called <span id="variable">ch</span> that stores the symbol '@' , we write it like this :</p>
+    <img src="./images/char1.png" alt="picture how to declare char variable in VScode">
+    <p class="explain">Now we have a variable called <span id="variable">ch</span> , to print what is inside the <span id="variable">ch</span> variable , we write it like this :</p>
+    <img src="./images/char2.png" alt="picture how to print the symbol inside char variable">
+    <p class="explain">This statement prints <span class="variableresult">@</span> , which is the value stored inside <span id="variable">str</span>. </p>
+    <br><br><hr>
+    <p class="explain">Next , we start with <span id="mainfunction">bool</span> data type. <br> <span id="mainfunction">bool</span> means <span id="iletter">boolean <span class="explain">(</span> true </span> or <span id="iletter">false</span> <span class="explain"> )</span> , <span id="mainfunction">bool</span> is used to store only true or false values.</p>
+    <p class="explain">In C++ , when we print a bool variable , its shows 1 for true and 0 for false. <br>Any number except zero is considered true , and zero is considered false.</p>
+    <p class="example">Example : </p>
+    <p class="explain">If we want to declare a variable called <span id="variable">b</span> that stores true , we write it like this :</p>
+    <img src="./images/bool1.png" alt="picture how to declare a bool variable in VScode">
+    <p class="explain">Now we have a variable called <span id="variable">b</span> , to print the value of <span id="variable">b</span> , we write it like this :</p>
+    <img src="./images/bool2.png" alt="picture how to print bool value in VScode">
+    <p class="explain">This statement prints <span class="variableresult">1</span> , which is the value of true , which represents true , if we change the value of <span id="variable">b</span> to 147 , the program will also print 1 , because 147 is not zero.</p>
+    <br><br><hr>
+    <p class="explain">There are many other data types in C++ , like unsigned types. <br> for example .. an <span id="mainfunction">unsigned int</span> holds only positive values. <br>However , these are the most improtant ones we need to cover.</p>
+    
+    <p class="datatypequizexplain"><a class="datatypequizbutton" href="datatypesquiz.html">click here for a quick quiz!</a></p>
+    
+    
+
+      <div class="center-container">
+        <button class="homepagebutton" onclick="goHome()">
+        <i class="crown"></i>
+        <span>HOME PAGE</span>
+    </button>
+        </div>
+    <script>
+        function goHome() {
+            window.location.href = "index.html";
+      }
+    </script>
+
+    <br>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

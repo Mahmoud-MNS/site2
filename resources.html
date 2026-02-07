@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resources | MNS CodeCraft</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" href="./icon.jpg" type="image/x-icon">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Oswald:wght@200..700&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap" rel="stylesheet">
+</head>
+
+<body id="homepagedesign">
+
+  <!-- ===== HERO ===== -->
+  <section class="hero2" id="top">
+    <div class="hero2-box">
+      <p class="hero2-kicker">RESOURCES • SETUP & RECOMMENDATIONS</p>
+
+      <h2 class="hero2-title">
+        Everything you need —
+        <span>clean tools, trusted references, and practice ideas.</span>
+      </h2>
+
+      <p class="hero2-note" style="margin-top: 12px;">
+        Keep it simple: pick one setup, follow the track, and practice daily.
+        This page is your quick “get ready” checklist.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== WINDOWS: Visual Studio Community ===== -->
+  <section class="hero2" id="windows-vs">
+    <div class="hero2-box">
+      <p class="hero2-kicker">WINDOWS • VISUAL STUDIO COMMUNITY</p>
+
+      <h2 class="hero2-title">
+        Best “all-in-one” option on Windows —
+        <span>Visual Studio Community.</span>
+      </h2>
+
+      <p class="hero2-note" style="margin-top: 12px;">
+        <strong>Download (Official):</strong>
+        <a href="https://visualstudio.microsoft.com/vs/community/" target="_blank" rel="noopener">Visual Studio Community</a>
+      </p>
+
+      <div style="height: 10px;"></div>
+
+      <ul class="hero2-note" style="line-height: 1.9; margin: 0; padding-left: 18px;">
+        <li>Install it, then select the workload: <strong>“Desktop development with C++”</strong>.</li>
+        <li>Make sure <strong>MSVC</strong> and <strong>Windows SDK</strong> are checked.</li>
+        <li>After install: Create a new project → <strong>Console App (C++)</strong>.</li>
+      </ul>
+
+      <div style="height: 10px;"></div>
+
+      <p class="hero2-note">
+        If you want a lighter editor on Windows, use:
+        <a href="https://code.visualstudio.com/download" target="_blank" rel="noopener">VS Code</a>
+        + a compiler (MinGW/GCC).
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== macOS Setup ===== -->
+  <section class="hero2" id="mac-setup">
+    <div class="hero2-box">
+      <p class="hero2-kicker">macOS • RECOMMENDED SETUP</p>
+
+      <h2 class="hero2-title">
+        On Mac —
+        <span>use VS Code + Clang (Xcode Tools).</span>
+      </h2>
+
+      <p class="hero2-note" style="margin-top: 12px;">
+        Note: <strong>Visual Studio Community (full IDE)</strong> is mainly for Windows.
+        On macOS, the smooth beginner setup is VS Code + Apple’s compiler tools.
+      </p>
+
+      <div style="height: 10px;"></div>
+
+      <p class="hero2-note">
+        <strong>1) Download VS Code (Official):</strong>
+        <a href="https://code.visualstudio.com/download" target="_blank" rel="noopener">VS Code Download</a>
+        <span style="opacity:.8;">(or see the mac setup guide:</span>
+        <a href="https://code.visualstudio.com/docs/setup/mac" target="_blank" rel="noopener">VS Code on macOS</a><span style="opacity:.8;">)</span>
+      </p>
+
+      <div style="height: 10px;"></div>
+
+      <p class="hero2-note">
+        <strong>2) Install Xcode Command Line Tools (Clang):</strong>
+        Open Terminal and run:
+      </p>
+
+      <pre style="
+        margin: 10px 0 0;
+        padding: 12px 14px;
+        border-radius: 14px;
+        background: rgba(0,0,0,0.35);
+        border: 1px solid rgba(255,255,255,0.10);
+        overflow: auto;
+      "><code>xcode-select --install</code></pre>
+
+      <div style="height: 10px;"></div>
+
+      <p class="hero2-note">
+        Official Apple note:
+        <a href="https://developer.apple.com/documentation/xcode/installing-the-command-line-tools/" target="_blank" rel="noopener">
+          Installing the command-line tools
+        </a>
+      </p>
+
+      <div style="height: 10px;"></div>
+
+      <p class="hero2-note">
+        <strong>3) Test your compiler:</strong> In Terminal:
+      </p>
+
+      <pre style="
+        margin: 10px 0 0;
+        padding: 12px 14px;
+        border-radius: 14px;
+        background: rgba(0,0,0,0.35);
+        border: 1px solid rgba(255,255,255,0.10);
+        overflow: auto;
+      "><code>clang++ --version</code></pre>
+    </div>
+  </section>
+
+  <!-- ===== Trusted References ===== -->
+  <section class="hero2" id="references">
+    <div class="hero2-box">
+      <p class="hero2-kicker">REFERENCES • TRUSTED SOURCES</p>
+
+      <h2 class="hero2-title">
+        When you need quick answers —
+        <span>use these (clean & reliable).</span>
+      </h2>
+
+      <ul class="hero2-note" style="line-height: 1.9; margin: 12px 0 0; padding-left: 18px;">
+        <li>
+          <strong>cppreference</strong> (best C++ reference):
+          <a href="https://en.cppreference.com/" target="_blank" rel="noopener">en.cppreference.com</a>
+        </li>
+        <li>
+          <strong>Microsoft C++ Docs</strong> (Windows toolchain):
+          <a href="https://learn.microsoft.com/en-us/cpp/" target="_blank" rel="noopener">learn.microsoft.com/cpp</a>
+        </li>
+        <li>
+          <strong>GeeksforGeeks</strong> (examples + practice):
+          <a href="https://www.geeksforgeeks.org/c-plus-plus/" target="_blank" rel="noopener">geeksforgeeks.org/c-plus-plus</a>
+        </li>
+      </ul>
+
+      <div style="height: 10px;"></div>
+
+      <p class="hero2-note">
+        Pro tip: learn the concept from lessons, then verify syntax on cppreference.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== Practice ===== -->
+  <section class="hero2" id="practice">
+    <div class="hero2-box">
+      <p class="hero2-kicker">PRACTICE • MINI PROJECTS</p>
+
+      <h2 class="hero2-title">
+        Practice makes it real —
+        <span>small projects, big progress.</span>
+      </h2>
+
+      <ul class="hero2-note" style="line-height: 1.9; margin: 12px 0 0; padding-left: 18px;">
+        <li><strong>Calculator</strong> (operators + conditions + functions)</li>
+        <li><strong>Guess the Number</strong> (loops + random)</li>
+        <li><strong>To-Do List (Console)</strong> (arrays / vectors)</li>
+        <li><strong>Student Manager</strong> (structs + file basics later)</li>
+        <li><strong>Simple Bank System</strong> (logic + clean code)</li>
+      </ul>
+
+      <div style="height: 10px;"></div>
+
+      <p class="hero2-note">
+        Rule: don’t copy-paste. Type it yourself, break it, fix it — that’s the real learning.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== Learning Tips ===== -->
+  <section class="hero2" id="tips">
+    <div class="hero2-box">
+      <p class="hero2-kicker">TIPS • SMART LEARNING</p>
+
+      <h2 class="hero2-title">
+        Keep it calm —
+        <span>build skill with a steady routine.</span>
+      </h2>
+
+      <ul class="hero2-note" style="line-height: 1.9; margin: 12px 0 0; padding-left: 18px;">
+        <li>Focus on <strong>one topic</strong> at a time.</li>
+        <li>After each lesson: write <strong>3–5 lines</strong> from memory.</li>
+        <li>Debugging is not pain — it’s <strong>training</strong>.</li>
+        <li>Save your “wins” folder: small programs you’re proud of.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== HOME BUTTON ===== -->
+  <section class="hero2">
+    <div class="hero2-box" style="text-align:center;">
+      <div class="hero2-actions">
+        <a class="hero2-btn hero2-btn--primary" href="index.html">
+          Home Page
+        </a>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

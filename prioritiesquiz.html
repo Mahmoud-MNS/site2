@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Priorities & Calculations Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="datatypequizpage">
+
+
+    <h2 class="quizquestion">What happens if you print a variable without a starting value ?</h2>
+   
+
+    <div class="datatypequizcontainer">
+    <form>
+    <p>
+        <label class="quizoption">
+            <input type="radio" name="datatype23" value="Zero">
+            Zero
+        </label>
+
+        <label class="quizoption">
+            <input type="radio" name="datatype23" value="Random number">
+            Random number
+        </label>
+
+        <label class="quizoption">
+            <input type="radio" name="datatype23" value="Error">
+            Error
+        </label>
+
+        <label class="quizoption">
+            <input type="radio" name="datatype23" value="Nothing">
+            Nothing
+        </label>
+
+        
+    </p>
+
+   
+    
+
+    <button class="quizsubmitbutton" type="button" onclick="checkAnswer23()">Submit</button>
+    </div>
+    </form>
+    
+    <p class="quizresult" id="result23"></p>
+
+    <script>
+        function checkAnswer23() {
+            const resultEl = document.getElementById("result23");
+            const selected = document.querySelector('input[name="datatype23"]:checked');
+
+            resultEl.classList.remove("correct", "wrong", "info");
+
+            if(!selected) {
+                resultEl.textContent = "Please select an option.";
+                resultEl.classList.add("info");
+                return;
+            }
+
+            if (selected.value === "Error") {
+                resultEl.textContent = "Correct✅";
+                resultEl.classList.add("correct");
+            } else {
+                resultEl.textContent="Try again❌";
+                resultEl.classList.add("wrong");
+            }
+        }
+    </script>
+
+
+
+
+<h2 class="quizquestion">In int s = 2 + 5; , what happens first ?</h2>
+   
+
+    <div class="datatypequizcontainer">
+    <form>
+    <p>
+        <label class="quizoption">
+            <input type="radio" name="datatype24" value="Assign s">
+            Assign s
+        </label>
+
+        <label class="quizoption">
+            <input type="radio" name="datatype24" value="Add 2 + 5">
+            Add 2 + 5
+        </label>
+
+        <label class="quizoption">
+            <input type="radio" name="datatype24" value="Error">
+            Nothing happens
+        </label>
+
+        <label class="quizoption">
+            <input type="radio" name="datatype24" value="It prints s">
+            It prints s
+        </label>
+
+        
+    </p>
+
+   
+    
+
+    <button class="quizsubmitbutton" type="button" onclick="checkAnswer24()">Submit</button>
+    </div>
+    </form>
+    
+    <p class="quizresult" id="result24"></p>
+
+    <script>
+        function checkAnswer24() {
+            const resultEl = document.getElementById("result24");
+            const selected = document.querySelector('input[name="datatype24"]:checked');
+
+            resultEl.classList.remove("correct", "wrong", "info");
+
+            if(!selected) {
+                resultEl.textContent = "Please select an option.";
+                resultEl.classList.add("info");
+                return;
+            }
+
+            if (selected.value === "Add 2 + 5") {
+                resultEl.textContent = "Correct✅";
+                resultEl.classList.add("correct");
+            } else {
+                resultEl.textContent="Try again❌";
+                resultEl.classList.add("wrong");
+            }
+        }
+    </script>
+
+
+
+
+
+
+<h2 class="quizquestion">Which is done first ?  1 + 4 * 3</h2>
+   
+
+    <div class="datatypequizcontainer">
+    <form>
+    <p>
+        <label class="quizoption">
+            <input type="radio" name="datatype25" value="1 + 4">
+            1 + 4
+        </label>
+
+        <label class="quizoption">
+            <input type="radio" name="datatype25" value="4 * 3">
+            4 * 3
+        </label>
+
+        <label class="quizoption">
+            <input type="radio" name="datatype25" value="Addition only">
+            Addition only
+        </label>
+
+        <label class="quizoption">
+            <input type="radio" name="datatype25" value="Multiplication only">
+            Multiplication only
+        </label>
+
+        
+    </p>
+
+   
+    
+
+    <button class="quizsubmitbutton" type="button" onclick="checkAnswer25()">Submit</button>
+    </div>
+    </form>
+    
+    <p class="quizresult" id="result25"></p>
+
+    <script>
+        function checkAnswer25() {
+            const resultEl = document.getElementById("result25");
+            const selected = document.querySelector('input[name="datatype25"]:checked');
+
+            resultEl.classList.remove("correct", "wrong", "info");
+
+            if(!selected) {
+                resultEl.textContent = "Please select an option.";
+                resultEl.classList.add("info");
+                return;
+            }
+
+            if (selected.value === "4 * 3") {
+                resultEl.textContent = "Correct✅";
+                resultEl.classList.add("correct");
+            } else {
+                resultEl.textContent="Try again❌";
+                resultEl.classList.add("wrong");
+            }
+        }
+    </script>
+
+
+
+
+<h2 class="quizquestion">With parentheses : (1 + 4) * 3 , what is calculated first ?</h2>
+   
+
+    <div class="datatypequizcontainer">
+    <form>
+    <p>
+        <label class="quizoption">
+            <input type="radio" name="datatype26" value="1 + 4">
+            1 + 4
+        </label>
+
+        <label class="quizoption">
+            <input type="radio" name="datatype26" value="3">
+            3
+        </label>
+
+        <label class="quizoption">
+            <input type="radio" name="datatype26" value="Multiplication first">
+            Multiplication first
+        </label>
+
+        <label class="quizoption">
+            <input type="radio" name="datatype26" value="Addition last">
+            Addition last
+        </label>
+
+        
+    </p>
+
+   
+    
+
+    <button class="quizsubmitbutton" type="button" onclick="checkAnswer26()">Submit</button>
+    </div>
+    </form>
+    
+    <p class="quizresult" id="result26"></p>
+
+    <script>
+        function checkAnswer26() {
+            const resultEl = document.getElementById("result26");
+            const selected = document.querySelector('input[name="datatype26"]:checked');
+
+            resultEl.classList.remove("correct", "wrong", "info");
+
+            if(!selected) {
+                resultEl.textContent = "Please select an option.";
+                resultEl.classList.add("info");
+                return;
+            }
+
+            if (selected.value === "1 + 4") {
+                resultEl.textContent = "Correct✅";
+                resultEl.classList.add("correct");
+            } else {
+                resultEl.textContent="Try again❌";
+                resultEl.classList.add("wrong");
+            }
+        }
+    </script>
+
+
+
+
+<h2 class="quizquestion">What does 13 % 8 return ?</h2>
+   
+
+    <div class="datatypequizcontainer">
+    <form>
+    <p>
+        <label class="quizoption">
+            <input type="radio" name="datatype27" value="13">
+            13
+        </label>
+
+        <label class="quizoption">
+            <input type="radio" name="datatype27" value="1">
+            1
+        </label>
+
+        <label class="quizoption">
+            <input type="radio" name="datatype27" value="8">
+            8
+        </label>
+
+        <label class="quizoption">
+            <input type="radio" name="datatype27" value="5">
+            5
+        </label>
+
+        
+    </p>
+
+   
+    
+
+    <button class="quizsubmitbutton" type="button" onclick="checkAnswer27()">Submit</button>
+    </div>
+    </form>
+    
+    <p class="quizresult" id="result27"></p>
+
+    <script>
+        function checkAnswer27() {
+            const resultEl = document.getElementById("result27");
+            const selected = document.querySelector('input[name="datatype27"]:checked');
+
+            resultEl.classList.remove("correct", "wrong", "info");
+
+            if(!selected) {
+                resultEl.textContent = "Please select an option.";
+                resultEl.classList.add("info");
+                return;
+            }
+
+            if (selected.value === "5") {
+                resultEl.textContent = "Correct✅";
+                resultEl.classList.add("correct");
+            } else {
+                resultEl.textContent="Try again❌";
+                resultEl.classList.add("wrong");
+            }
+        }
+    </script>
+
+
+
+
+<h2 class="quizquestion">What is any number % itself ?</h2>
+   
+
+    <div class="datatypequizcontainer">
+    <form>
+    <p>
+        <label class="quizoption">
+            <input type="radio" name="datatype28" value="The number itself">
+            The number itself
+        </label>
+
+        <label class="quizoption">
+            <input type="radio" name="datatype28" value="1">
+            1
+        </label>
+
+        <label class="quizoption">
+            <input type="radio" name="datatype28" value="0">
+            0
+        </label>
+
+        <label class="quizoption">
+            <input type="radio" name="datatype28" value="Error">
+            Error
+        </label>
+
+        
+    </p>
+
+   
+    
+
+    <button class="quizsubmitbutton" type="button" onclick="checkAnswer28()">Submit</button>
+    </div>
+    </form>
+    
+    <p class="quizresult" id="result28"></p>
+
+    <script>
+        function checkAnswer28() {
+            const resultEl = document.getElementById("result28");
+            const selected = document.querySelector('input[name="datatype28"]:checked');
+
+            resultEl.classList.remove("correct", "wrong", "info");
+
+            if(!selected) {
+                resultEl.textContent = "Please select an option.";
+                resultEl.classList.add("info");
+                return;
+            }
+
+            if (selected.value === "0") {
+                resultEl.textContent = "Correct✅";
+                resultEl.classList.add("correct");
+            } else {
+                resultEl.textContent="Try again❌";
+                resultEl.classList.add("wrong");
+            }
+        }
+    </script>
+
+
+
+
+<h2 class="quizquestion">What happens if you do 0 % 0 ?</h2>
+   
+
+    <div class="datatypequizcontainer">
+    <form>
+    <p>
+        <label class="quizoption">
+            <input type="radio" name="datatype29" value="0">
+            0
+        </label>
+
+        <label class="quizoption">
+            <input type="radio" name="datatype29" value="1">
+            1
+        </label>
+
+        <label class="quizoption">
+            <input type="radio" name="datatype29" value="0 or 1">
+            0 or 1
+        </label>
+
+        <label class="quizoption">
+            <input type="radio" name="datatype29" value="Error">
+            Error
+        </label>
+
+        
+    </p>
+
+   
+    
+
+    <button class="quizsubmitbutton" type="button" onclick="checkAnswer29()">Submit</button>
+    </div>
+    </form>
+    
+    <p class="quizresult" id="result29"></p>
+
+    <script>
+        function checkAnswer29() {
+            const resultEl = document.getElementById("result29");
+            const selected = document.querySelector('input[name="datatype29"]:checked');
+
+            resultEl.classList.remove("correct", "wrong", "info");
+
+            if(!selected) {
+                resultEl.textContent = "Please select an option.";
+                resultEl.classList.add("info");
+                return;
+            }
+
+            if (selected.value === "Error") {
+                resultEl.textContent = "Correct✅";
+                resultEl.classList.add("correct");
+            } else {
+                resultEl.textContent="Try again❌";
+                resultEl.classList.add("wrong");
+            }
+        }
+    </script>
+
+
+
+<h2 class="quizquestion">What does cin >> w; do ?</h2>
+   
+
+    <div class="datatypequizcontainer">
+    <form>
+    <p>
+        <label class="quizoption">
+            <input type="radio" name="datatype30" value="Prints w">
+            Prints w
+        </label>
+
+        <label class="quizoption">
+            <input type="radio" name="datatype30" value="Reads a value into w">
+            Reads a value into w
+        </label>
+
+        <label class="quizoption">
+            <input type="radio" name="datatype30" value="Adds to w">
+            Adds to w
+        </label>
+
+        <label class="quizoption">
+            <input type="radio" name="datatype30" value="Sets w to zero">
+            Sets w to zero
+        </label>
+
+        
+    </p>
+
+   
+    
+
+    <button class="quizsubmitbutton" type="button" onclick="checkAnswer30()">Submit</button>
+    </div>
+    </form>
+    
+    <p class="quizresult" id="result30"></p>
+
+    <script>
+        function checkAnswer30() {
+            const resultEl = document.getElementById("result30");
+            const selected = document.querySelector('input[name="datatype30"]:checked');
+
+            resultEl.classList.remove("correct", "wrong", "info");
+
+            if(!selected) {
+                resultEl.textContent = "Please select an option.";
+                resultEl.classList.add("info");
+                return;
+            }
+
+            if (selected.value === "Reads a value into w") {
+                resultEl.textContent = "Correct✅";
+                resultEl.classList.add("correct");
+            } else {
+                resultEl.textContent="Try again❌";
+                resultEl.classList.add("wrong");
+            }
+        }
+    </script>
+
+
+
+
+
+<h2 class="quizquestion">How do you read two values at once ?</h2>
+   
+
+    <div class="datatypequizcontainer">
+    <form>
+    <p>
+        <label class="quizoption">
+            <input type="radio" name="datatype31" value="cin >> a >> b;">
+            cin >> a >> b;
+        </label>
+
+        <label class="quizoption">
+            <input type="radio" name="datatype31" value="cin << a , b;">
+            cin << a , b;
+        </label>
+
+        <label class="quizoption">
+            <input type="radio" name="datatype31" value="cin >> a + b;">
+            cin >> a + b;
+        </label>
+
+        <label class="quizoption">
+            <input type="radio" name="datatype31" value="cin a , b;">
+            cin a , b;
+        </label>
+
+        
+    </p>
+
+   
+    
+
+    <button class="quizsubmitbutton" type="button" onclick="checkAnswer31()">Submit</button>
+    </div>
+    </form>
+    
+    <p class="quizresult" id="result31"></p>
+
+    <script>
+        function checkAnswer31() {
+            const resultEl = document.getElementById("result31");
+            const selected = document.querySelector('input[name="datatype31"]:checked');
+
+            resultEl.classList.remove("correct", "wrong", "info");
+
+            if(!selected) {
+                resultEl.textContent = "Please select an option.";
+                resultEl.classList.add("info");
+                return;
+            }
+
+            if (selected.value === "cin >> a >> b;") {
+                resultEl.textContent = "Correct✅";
+                resultEl.classList.add("correct");
+            } else {
+                resultEl.textContent="Try again❌";
+                resultEl.classList.add("wrong");
+            }
+        }
+    </script>
+
+
+
+<h2 class="quizquestion">What happens when cin runs ?</h2>
+   
+
+    <div class="datatypequizcontainer">
+    <form>
+    <p>
+        <label class="quizoption">
+            <input type="radio" name="datatype32" value="It waits for user input">
+            It waits for user input
+        </label>
+
+        <label class="quizoption">
+            <input type="radio" name="datatype32" value="It prints input">
+            It prints input
+        </label>
+
+        <label class="quizoption">
+            <input type="radio" name="datatype32" value="It ends the program">
+            It ends the program
+        </label>
+
+        <label class="quizoption">
+            <input type="radio" name="datatype32" value="It multiplies numbers">
+            It multiplies numbers
+        </label>
+
+        
+    </p>
+
+   
+    
+
+    <button class="quizsubmitbutton" type="button" onclick="checkAnswer32()">Submit</button>
+    </div>
+    </form>
+    
+    <p class="quizresult" id="result32"></p>
+
+    <script>
+        function checkAnswer32() {
+            const resultEl = document.getElementById("result32");
+            const selected = document.querySelector('input[name="datatype32"]:checked');
+
+            resultEl.classList.remove("correct", "wrong", "info");
+
+            if(!selected) {
+                resultEl.textContent = "Please select an option.";
+                resultEl.classList.add("info");
+                return;
+            }
+
+            if (selected.value === "It waits for user input") {
+                resultEl.textContent = "Correct✅";
+                resultEl.classList.add("correct");
+            } else {
+                resultEl.textContent="Try again❌";
+                resultEl.classList.add("wrong");
+            }
+        }
+    </script>
+
+
+<p>Well done! you completed the quiz!</p>
+
+<button class="homepagebutton" onclick="goHome()">
+    <i class="crown"></i>
+    <span>HOME PAGE</span>
+</button>
+<script>
+    function goHome() {
+        window.location.href = "index.html";
+    }
+</script>
+
+<br>
+
+
+    
+</body>
+</html>

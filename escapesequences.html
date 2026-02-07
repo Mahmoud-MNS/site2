@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escape Sequences</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="introductionword">Escape Sequences</h1>
+    <p class="explain">Escape Sequences start with a backslash ( \ ) <br>We use them in some cases to help us with certain things that we will see later. <br>There are many escape sequences , but we will only cover the basic ones. </p>
+    
+    <p class="explain">We start with <span id="mainfunction">\n</span> , it moves us down to the next line.</p>
+    <p class="example">Example :</p>
+    <p class="explain">If we write this code without <span id="mainfunction">\n</span> :</p>
+    <img src="./images/exampleescapen.png" alt="picture how to print two words in two lines without \n">
+    <p class="explain">We will get <span class="variableresult">Hello Hi</span> in the same line ,  <br> but if we write the same code with <span id="mainfunction">\n</span> :</p>
+    <img src="./images/exampleescapen2.png" alt="picture how to print two words in two lines with \n">
+    <p class="explain">We will get this in two different lines :<br><span class="variableresult">Hello <br> Hi</span> </p>
+    <br><br><hr>
+    <p class="explain">Next , we start with <span id="mainfunction">\t</span> it makes a tab space , just like when you press the Tab key on the keyboard ( 4 spaces ) .</p>
+    <p class="example">Example :</p>
+    <p class="explain">If we write this code without <span id="mainfunction">\t</span> :</p>
+    <img src="./images/exampleescapen.png" alt="picture how to print two words without \t">
+    <p class="explain">We will normally get the result <span class="variableresult">Hello Hi</span> with one space ,  <br> but if we write the same code with <span id="mainfunction">\t</span> :</p>
+    <img src="./images/exampleescapet1.png" alt="picture how to print two words with \t">
+    <p class="explain">We will get <span class="variableresult">Hello</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="variableresult">Hi</span> , with 4 spaces ( tab ) .</p>
+    <br><br><hr>
+    <p class="explain">Next , we start with <span id="mainfunction">\b</span> ( backspace ) , it erases the character right before it in the output.</p>
+    <p class="example">Example :</p>
+    <img src="./images/exampleescapeb1.png" alt="picture how to print code with \b">
+    <p class="explain">We will get <span class="variableresult">HellHi</span> , because the <span id="mainfunction">\b</span> removes the letter <span class="variableresult">o</span> , since <span class="variableresult">o</span> was the character right before it.</p>
+    <br><br><hr>
+    <p class="explain">Next , we start with <span id="mainfunction">\r</span> , it deletes everything before it on the same line , and the output starts from whatever comes after the <span id="mainfunction">\r</span>.</p>
+    <p class="example">Example :</p>
+    <img src="./images/exampleescaper1.png" alt="picture how to print code with \r">
+    <p class="explain">We will get <span class="variableresult">my name is Mahmoud</span> , because the <span id="mainfunction">\r</span> deleted the word <span class="variableresult">Hello</span>.</p>
+
+
+
+    <br><br><hr>
+    <p class="explain">Next , we start with <span id="mainfunction">\a</span> , its not very important , but I mentioned it for reference. <br> It makes a beep or alert sound. <br> When the program reaches the line <span id="mainfunction">\a</span> itself , it triggers a sound ( like a system alert ) .</p>
+    
+
+    <p class="datatypequizexplain"><a class="datatypequizbutton" href="escapesequencesquiz.html">click here for a quick quiz!</a></p>
+
+  <div class="center-container">
+        <button class="homepagebutton" onclick="goHome()">
+        <i class="crown"></i>
+        <span>HOME PAGE</span>
+    </button>
+        </div>
+    <script>
+        function goHome() {
+            window.location.href = "index.html";
+      }
+    </script>
+
+    <br>
+
+
+
+
+
+
+</body>
+</html>

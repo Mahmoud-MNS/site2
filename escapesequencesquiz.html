@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escape Sequences Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="datatypequizpage">
+    <h2 class="quizquestion">Which escape sequence moves text to a new line ?</h2>
+   
+
+    <div class="datatypequizcontainer">
+    <form>
+    <p>
+        <label class="quizoption">
+            <input type="radio" name="datatype12" value="backslash n">
+            \n
+        </label>
+
+        <label class="quizoption">
+            <input type="radio" name="datatype12" value="backslash t">
+            \t
+        </label>
+
+        <label class="quizoption">
+            <input type="radio" name="datatype12" value="backslash r">
+            \r
+        </label>
+
+        <label class="quizoption">
+            <input type="radio" name="datatype12" value="backslash b">
+            \b
+        </label>
+
+        
+    </p>
+
+   
+    
+
+    <button class="quizsubmitbutton" type="button" onclick="checkAnswer12()">Submit</button>
+    </div>
+    </form>
+    
+    <p class="quizresult" id="result12"></p>
+
+    <script>
+        function checkAnswer12() {
+            const resultEl = document.getElementById("result12");
+            const selected = document.querySelector('input[name="datatype12"]:checked');
+
+            resultEl.classList.remove("correct", "wrong", "info");
+
+            if(!selected) {
+                resultEl.textContent = "Please select an option.";
+                resultEl.classList.add("info");
+                return;
+            }
+
+            if (selected.value === "backslash n") {
+                resultEl.textContent = "Correct✅";
+                resultEl.classList.add("correct");
+            } else {
+                resultEl.textContent="Try again❌";
+                resultEl.classList.add("wrong");
+            }
+        }
+    </script>
+
+
+
+
+<h2 class="quizquestion">Which escape sequence makes an alert sound ?</h2>
+   
+
+    <div class="datatypequizcontainer">
+    <form>
+    <p>
+        <label class="quizoption">
+            <input type="radio" name="datatype13" value="backslash b">
+            \b
+        </label>
+
+        <label class="quizoption">
+            <input type="radio" name="datatype13" value="backslash a">
+            \a
+        </label>
+
+        <label class="quizoption">
+            <input type="radio" name="datatype13" value="backslash t">
+            \t
+        </label>
+
+        <label class="quizoption">
+            <input type="radio" name="datatype13" value="backslash r">
+            \r
+        </label>
+
+        
+    </p>
+
+   
+    
+
+    <button class="quizsubmitbutton" type="button" onclick="checkAnswer13()">Submit</button>
+    </div>
+    </form>
+    
+    <p class="quizresult" id="result13"></p>
+
+    <script>
+        function checkAnswer13() {
+            const resultEl = document.getElementById("result13");
+            const selected = document.querySelector('input[name="datatype13"]:checked');
+
+            resultEl.classList.remove("correct", "wrong", "info");
+
+            if(!selected) {
+                resultEl.textContent = "Please select an option.";
+                resultEl.classList.add("info");
+                return;
+            }
+
+            if (selected.value === "backslash a") {
+                resultEl.textContent = "Correct✅";
+                resultEl.classList.add("correct");
+            } else {
+                resultEl.textContent="Try again❌";
+                resultEl.classList.add("wrong");
+            }
+        }
+    </script>
+
+
+
+<h2 class="quizquestion">Which escape sequence deletes the character right before it ?</h2>
+   
+
+    <div class="datatypequizcontainer">
+    <form>
+    <p>
+        <label class="quizoption">
+            <input type="radio" name="datatype14" value="backslash n">
+            \n
+        </label>
+
+        <label class="quizoption">
+            <input type="radio" name="datatype14" value="backslash a">
+            \a
+        </label>
+
+        <label class="quizoption">
+            <input type="radio" name="datatype14" value="backslash b">
+            \b
+        </label>
+
+        <label class="quizoption">
+            <input type="radio" name="datatype14" value="backslash t">
+            \t
+        </label>
+
+        
+    </p>
+
+   
+    
+
+    <button class="quizsubmitbutton" type="button" onclick="checkAnswer14()">Submit</button>
+    </div>
+    </form>
+    
+    <p class="quizresult" id="result14"></p>
+
+    <script>
+        function checkAnswer14() {
+            const resultEl = document.getElementById("result14");
+            const selected = document.querySelector('input[name="datatype14"]:checked');
+
+            resultEl.classList.remove("correct", "wrong", "info");
+
+            if(!selected) {
+                resultEl.textContent = "Please select an option.";
+                resultEl.classList.add("info");
+                return;
+            }
+
+            if (selected.value === "backslash b") {
+                resultEl.textContent = "Correct✅";
+                resultEl.classList.add("correct");
+            } else {
+                resultEl.textContent="Try again❌";
+                resultEl.classList.add("wrong");
+            }
+        }
+    </script>
+
+
+
+<h2 class="quizquestion">Which escape sequence inserts a horizontal tab space ?</h2>
+   
+
+    <div class="datatypequizcontainer">
+    <form>
+    <p>
+        <label class="quizoption">
+            <input type="radio" name="datatype15" value="backslash t">
+            \t
+        </label>
+
+        <label class="quizoption">
+            <input type="radio" name="datatype15" value="backslash b">
+            \b
+        </label>
+
+        <label class="quizoption">
+            <input type="radio" name="datatype15" value="backslash r">
+            \r
+        </label>
+
+        <label class="quizoption">
+            <input type="radio" name="datatype15" value="backslash n">
+            \n
+        </label>
+
+        
+    </p>
+
+   
+    
+
+    <button class="quizsubmitbutton" type="button" onclick="checkAnswer15()">Submit</button>
+    </div>
+    </form>
+    
+    <p class="quizresult" id="result15"></p>
+
+    <script>
+        function checkAnswer15() {
+            const resultEl = document.getElementById("result15");
+            const selected = document.querySelector('input[name="datatype15"]:checked');
+
+            resultEl.classList.remove("correct", "wrong", "info");
+
+            if(!selected) {
+                resultEl.textContent = "Please select an option.";
+                resultEl.classList.add("info");
+                return;
+            }
+
+            if (selected.value === "backslash t") {
+                resultEl.textContent = "Correct✅";
+                resultEl.classList.add("correct");
+            } else {
+                resultEl.textContent="Try again❌";
+                resultEl.classList.add("wrong");
+            }
+        }
+    </script>
+
+
+
+
+
+
+
+<h2 class="quizquestion">Which escape sequence deletes everything before it ?</h2>
+   
+
+    <div class="datatypequizcontainer">
+    <form>
+    <p>
+        <label class="quizoption">
+            <input type="radio" name="datatype16" value="backslash r">
+            \r
+        </label>
+
+        <label class="quizoption">
+            <input type="radio" name="datatype16" value="backslash n">
+            \n
+        </label>
+
+        <label class="quizoption">
+            <input type="radio" name="datatype16" value="backslash b">
+            \b
+        </label>
+
+        <label class="quizoption">
+            <input type="radio" name="datatype16" value="backslash a">
+            \a
+        </label>
+
+        
+    </p>
+
+   
+    
+
+    <button class="quizsubmitbutton" type="button" onclick="checkAnswer16()">Submit</button>
+    </div>
+    </form>
+    
+    <p class="quizresult" id="result16"></p>
+
+    <script>
+        function checkAnswer16() {
+            const resultEl = document.getElementById("result16");
+            const selected = document.querySelector('input[name="datatype16"]:checked');
+
+            resultEl.classList.remove("correct", "wrong", "info");
+
+            if(!selected) {
+                resultEl.textContent = "Please select an option.";
+                resultEl.classList.add("info");
+                return;
+            }
+
+            if (selected.value === "backslash r") {
+                resultEl.textContent = "Correct✅";
+                resultEl.classList.add("correct");
+            } else {
+                resultEl.textContent="Try again❌";
+                resultEl.classList.add("wrong");
+            }
+        }
+    </script>
+
+
+
+
+
+<h2 class="quizquestion">What does \n stand for ?</h2>
+   
+
+    <div class="datatypequizcontainer">
+    <form>
+    <p>
+        <label class="quizoption">
+            <input type="radio" name="datatype17" value="New line">
+            New line
+        </label>
+
+        <label class="quizoption">
+            <input type="radio" name="datatype17" value="Tab">
+            Tab 
+        </label>
+
+        <label class="quizoption">
+            <input type="radio" name="datatype17" value="Backspace">
+            Backspace
+        </label>
+
+        <label class="quizoption">
+            <input type="radio" name="datatype17" value="Alert">
+            Alert
+        </label>
+
+        
+    </p>
+
+   
+    
+
+    <button class="quizsubmitbutton" type="button" onclick="checkAnswer17()">Submit</button>
+    </div>
+    </form>
+    
+    <p class="quizresult" id="result17"></p>
+
+    <script>
+        function checkAnswer17() {
+            const resultEl = document.getElementById("result17");
+            const selected = document.querySelector('input[name="datatype17"]:checked');
+
+            resultEl.classList.remove("correct", "wrong", "info");
+
+            if(!selected) {
+                resultEl.textContent = "Please select an option.";
+                resultEl.classList.add("info");
+                return;
+            }
+
+            if (selected.value === "New line") {
+                resultEl.textContent = "Correct✅";
+                resultEl.classList.add("correct");
+            } else {
+                resultEl.textContent="Try again❌";
+                resultEl.classList.add("wrong");
+            }
+        }
+    </script>
+
+
+
+
+<h2 class="quizquestion">Which escape sequence moves the cursor one step back ?</h2>
+   
+
+    <div class="datatypequizcontainer">
+    <form>
+    <p>
+        <label class="quizoption">
+            <input type="radio" name="datatype18" value="backslash a">
+            \a
+        </label>
+
+        <label class="quizoption">
+            <input type="radio" name="datatype18" value="backslash t">
+            \t
+        </label>
+
+        <label class="quizoption">
+            <input type="radio" name="datatype18" value="backslash r">
+            \r
+        </label>
+
+        <label class="quizoption">
+            <input type="radio" name="datatype18" value="None of the above">
+            None of the above
+        </label>
+
+        
+    </p>
+
+   
+    
+
+    <button class="quizsubmitbutton" type="button" onclick="checkAnswer18()">Submit</button>
+    </div>
+    </form>
+    
+    <p class="quizresult" id="result18"></p>
+
+    <script>
+        function checkAnswer18() {
+            const resultEl = document.getElementById("result18");
+            const selected = document.querySelector('input[name="datatype18"]:checked');
+
+            resultEl.classList.remove("correct", "wrong", "info");
+
+            if(!selected) {
+                resultEl.textContent = "Please select an option.";
+                resultEl.classList.add("info");
+                return;
+            }
+
+            if (selected.value === "None of the above") {
+                resultEl.textContent = "Correct✅";
+                resultEl.classList.add("correct");
+            } else {
+                resultEl.textContent="Try again❌";
+                resultEl.classList.add("wrong");
+            }
+        }
+    </script>
+
+
+
+
+<h2 class="quizquestion">Which escape sequence adds a big space ?</h2>
+   
+
+    <div class="datatypequizcontainer">
+    <form>
+    <p>
+        <label class="quizoption">
+            <input type="radio" name="datatype19" value="backslash t">
+            \t
+        </label>
+
+        <label class="quizoption">
+            <input type="radio" name="datatype19" value="backslash a">
+            \a
+        </label>
+
+        <label class="quizoption">
+            <input type="radio" name="datatype19" value="backslash r">
+            \r
+        </label>
+
+        <label class="quizoption">
+            <input type="radio" name="datatype19" value="backslash b">
+            \b
+        </label>
+
+        
+    </p>
+
+   
+    
+
+    <button class="quizsubmitbutton" type="button" onclick="checkAnswer19()">Submit</button>
+    </div>
+    </form>
+    
+    <p class="quizresult" id="result19"></p>
+
+    <script>
+        function checkAnswer19() {
+            const resultEl = document.getElementById("result19");
+            const selected = document.querySelector('input[name="datatype19"]:checked');
+
+            resultEl.classList.remove("correct", "wrong", "info");
+
+            if(!selected) {
+                resultEl.textContent = "Please select an option.";
+                resultEl.classList.add("info");
+                return;
+            }
+
+            if (selected.value === "backslash t") {
+                resultEl.textContent = "Correct✅";
+                resultEl.classList.add("correct");
+            } else {
+                resultEl.textContent="Try again❌";
+                resultEl.classList.add("wrong");
+            }
+        }
+    </script>
+
+
+
+<h2 class="quizquestion">Which escape sequence makes only a sound ?</h2>
+   
+
+    <div class="datatypequizcontainer">
+    <form>
+    <p>
+        <label class="quizoption">
+            <input type="radio" name="datatype20" value="backslash n">
+            \n
+        </label>
+
+        <label class="quizoption">
+            <input type="radio" name="datatype20" value="backslash a">
+            \a
+        </label>
+
+        <label class="quizoption">
+            <input type="radio" name="datatype20" value="backslash t">
+            \t
+        </label>
+
+        <label class="quizoption">
+            <input type="radio" name="datatype20" value="backslash r">
+            \r
+        </label>
+
+        
+    </p>
+
+   
+    
+
+    <button class="quizsubmitbutton" type="button" onclick="checkAnswer20()">Submit</button>
+    </div>
+    </form>
+    
+    <p class="quizresult" id="result20"></p>
+
+    <script>
+        function checkAnswer20() {
+            const resultEl = document.getElementById("result20");
+            const selected = document.querySelector('input[name="datatype20"]:checked');
+
+            resultEl.classList.remove("correct", "wrong", "info");
+
+            if(!selected) {
+                resultEl.textContent = "Please select an option.";
+                resultEl.classList.add("info");
+                return;
+            }
+
+            if (selected.value === "backslash a") {
+                resultEl.textContent = "Correct✅";
+                resultEl.classList.add("correct");
+            } else {
+                resultEl.textContent="Try again❌";
+                resultEl.classList.add("wrong");
+            }
+        }
+    </script>
+
+
+
+
+
+
+<h2 class="quizquestion">Which escape sequence does <span class="notword">Not</span> move the cursor ?</h2>
+   
+
+    <div class="datatypequizcontainer">
+    <form>
+    <p>
+        <label class="quizoption">
+            <input type="radio" name="datatype22" value="backslash n">
+            \n
+        </label>
+
+        <label class="quizoption">
+            <input type="radio" name="datatype22" value="backslash t">
+            \t
+        </label>
+
+        <label class="quizoption">
+            <input type="radio" name="datatype22" value="backslash r">
+            \r
+        </label>
+
+        <label class="quizoption">
+            <input type="radio" name="datatype22" value="backslash a">
+            \a
+        </label>
+
+        
+    </p>
+
+   
+    
+
+    <button class="quizsubmitbutton" type="button" onclick="checkAnswer22()">Submit</button>
+    </div>
+    </form>
+    
+    <p class="quizresult" id="result22"></p>
+
+    <script>
+        function checkAnswer22() {
+            const resultEl = document.getElementById("result22");
+            const selected = document.querySelector('input[name="datatype22"]:checked');
+
+            resultEl.classList.remove("correct", "wrong", "info");
+
+            if(!selected) {
+                resultEl.textContent = "Please select an option.";
+                resultEl.classList.add("info");
+                return;
+            }
+
+            if (selected.value === "backslash a") {
+                resultEl.textContent = "Correct✅";
+                resultEl.classList.add("correct");
+            } else {
+                resultEl.textContent="Try again❌";
+                resultEl.classList.add("wrong");
+            }
+        }
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <p>Well done! you completed the quiz!</p>
+
+    <button class="homepagebutton" onclick="goHome()">
+        <i class="crown"></i>
+        <span>HOME PAGE</span>
+    </button>
+    <script>
+        function goHome() {
+            window.location.href = "index.html";
+      }
+    </script>
+
+    <br>
+    
+</body>
+</html>
